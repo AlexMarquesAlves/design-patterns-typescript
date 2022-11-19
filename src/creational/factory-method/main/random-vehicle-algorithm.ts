@@ -1,5 +1,6 @@
 import { BicycleFactory } from "../factories/bicycle-factory";
 import { CarFactory } from "../factories/car-factory";
+import { randomNumbers } from "../utils/random-numbers";
 import { Vehicle } from "../vehicle/vehicle";
 
 export function randomCarAlgorithm(): Vehicle {
@@ -10,5 +11,5 @@ export function randomCarAlgorithm(): Vehicle {
   const bicycle = bicycleFactory.getVehicle("Bicycle");
   const cars = [car1, car2, bicycle];
 
-  return cars[1];
+  return cars[randomNumbers(cars.length)];
 }
