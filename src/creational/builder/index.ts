@@ -3,7 +3,7 @@ import { MainDishBuilder } from "./classes/main-dish-builder";
 import { VeganDishBuilder } from "./classes/vegan-dish-builder";
 
 const mainDishBuilder = new MainDishBuilder();
-mainDishBuilder.makeMeal();
+mainDishBuilder.getMeal();
 log(mainDishBuilder.getMeals());
 log(mainDishBuilder.getPrice());
 
@@ -16,6 +16,6 @@ log(meal2);
 log("\n");
 
 const veganDishBuilder = new VeganDishBuilder();
-const veganMeal = veganDishBuilder.makeMeal().getMeals();
+const veganMeal = veganDishBuilder.getMeal().getMeals();
 log(veganMeal);
 log(veganMeal.getPrice());

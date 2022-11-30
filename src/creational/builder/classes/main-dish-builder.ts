@@ -10,7 +10,7 @@ export class MainDishBuilder implements MealBuilderProtocol {
     return this;
   }
 
-  makeMeal(): this {
+  getMeal(): this {
     const rice = new Rice("Arroz", 5);
     const beans = new Beans("Feijão", 10);
     const meat = new Meat("Carne", 20);
