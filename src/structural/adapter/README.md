@@ -36,9 +36,9 @@ Use o padrão Adapter quando:
 
 ## Implementação - Teoria
 
-1. **Declare a interface do `Adapter` (`Target` no diagrama):** essa é a interface que seu código cliente usa e todos os `Adapters` concretos implementam. Ela deve ter os métodos que serão encaminhados para o código que está sendo adaptado (`Adaptee` no diagrama)
-2. **Crie adaptares concretos que implementam a interface do `Adapter` (`Adapter` no diagrama):** você pode criar quantas classes adaptadoras precisar para seu código. Essa classe deverá encaminhar chamadas de métodos para o código que está sendo adaptado (`Adaptee` no diagrama)
-3. **Encaminhe as chamadas de método do `Adapter` para o `Adaptee`:** agora você só precisará encaminhar as chamadas de métodos do seu `Adapter` concreto para o código que está sendo adaptado (`Adaptee` no diagrama)
+1. **Declare a interface do `Adapter` (`Target` no diagrama):** essa é a interface que seu código cliente usa e todos os `Adapters` concretos implementam. Ela deve ter os métodos que serão encaminhados para o código que está sendo adaptado (`Adapter` no diagrama)
+2. **Crie adaptares concretos que implementam a interface do `Adapter` (`Adapter` no diagrama):** você pode criar quantas classes adaptadoras precisar para seu código. Essa classe deverá encaminhar chamadas de métodos para o código que está sendo adaptado (`Adapter` no diagrama)
+3. **Encaminhe as chamadas de método do `Adapter` para o `Adapter`:** agora você só precisará encaminhar as chamadas de métodos do seu `Adapter` concreto para o código que está sendo adaptado (`Adapter` no diagrama)
 
 ## Consequências
 
