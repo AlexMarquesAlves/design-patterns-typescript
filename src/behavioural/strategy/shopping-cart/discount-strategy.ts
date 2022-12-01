@@ -1,4 +1,4 @@
-import { ECommerceShoppingCart } from './e-commerce-shopping-cart';
+import { ECommerceShoppingCart } from "./e-commerce-shopping-cart";
 
 export class DiscountStrategy {
   protected discount = 0;
