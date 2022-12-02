@@ -1,4 +1,4 @@
-import { Memento } from './memento';
+import { Memento } from "./memento";
 
 export class ConcreteMemento implements Memento {
   constructor(

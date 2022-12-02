@@ -1,5 +1,5 @@
-import { ImageEditor } from './image-editor';
-import { Memento } from './memento';
+import { ImageEditor } from "./image-editor";
+import { Memento } from "./memento";
 
 export class ImageEditorBackupManager {
   private mementos: Memento[] = [];
@@ -15,7 +15,7 @@ export class ImageEditorBackupManager {
     const memento = this.mementos.pop();
 
     if (!memento) {
-      console.log('Backup: no mementos');
+      console.log("Backup: no mementos");
       return;
     }
 

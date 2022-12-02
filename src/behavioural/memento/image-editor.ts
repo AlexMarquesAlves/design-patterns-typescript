@@ -1,5 +1,5 @@
-import { ConcreteMemento } from './concrete-memento';
-import { Memento } from './memento';
+import { ConcreteMemento } from "./concrete-memento";
+import { Memento } from "./memento";
 
 // Originator
 export class ImageEditor {
@@ -7,8 +7,8 @@ export class ImageEditor {
 
   convertFormatTo(format: string): void {
     this.fileFormat = format;
-    this.filePath = this.filePath.split('.').slice(0, -1).join('');
-    this.filePath += '.' + format;
+    this.filePath = this.filePath.split(".").slice(0, -1).join("");
+    this.filePath += "." + format;
   }
 
   save(): Readonly<Memento> {
