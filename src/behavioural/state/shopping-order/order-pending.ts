@@ -1,10 +1,10 @@
-import { ShoppingOrderState } from './shopping-order-state';
-import { ShoppingOrder } from './shopping-order';
-import { OrderApproved } from './order-approved';
-import { OrderRejected } from './order-rejected';
+import { ShoppingOrderState } from "./shopping-order-state";
+import { ShoppingOrder } from "./shopping-order";
+import { OrderApproved } from "./order-approved";
+import { OrderRejected } from "./order-rejected";
 
 export class OrderPending implements ShoppingOrderState {
-  private name = 'OrderPending';
+  private name = "OrderPending";
 
   constructor(private order: ShoppingOrder) {}
 
@@ -21,10 +21,10 @@ export class OrderPending implements ShoppingOrderState {
   }
 
   waitPayment(): void {
-    console.log('O pedido já está no estado pagamento pendente.');
+    console.log("O pedido já está no estado pagamento pendente.");
   }
 
   shipOrder(): void {
-    console.log('Não posso enviar o pedido com pagamento pendente.');
+    console.log("Não posso enviar o pedido com pagamento pendente.");
   }
 }

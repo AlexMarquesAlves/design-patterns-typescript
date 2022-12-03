@@ -1,10 +1,10 @@
-import { ShoppingOrderState } from './shopping-order-state';
-import { ShoppingOrder } from './shopping-order';
-import { OrderPending } from './order-pending';
-import { OrderRejected } from './order-rejected';
+import { ShoppingOrderState } from "./shopping-order-state";
+import { ShoppingOrder } from "./shopping-order";
+import { OrderPending } from "./order-pending";
+import { OrderRejected } from "./order-rejected";
 
 export class OrderApproved implements ShoppingOrderState {
-  private name = 'OrderApproved';
+  private name = "OrderApproved";
 
   constructor(private order: ShoppingOrder) {}
 
@@ -13,7 +13,7 @@ export class OrderApproved implements ShoppingOrderState {
   }
 
   approvePayment(): void {
-    console.log('O pedido já está no estado pagamento aprovado.');
+    console.log("O pedido já está no estado pagamento aprovado.");
   }
 
   rejectPayment(): void {
@@ -25,6 +25,6 @@ export class OrderApproved implements ShoppingOrderState {
   }
 
   shipOrder(): void {
-    console.log('Enviando pedido para o cliente...');
+    console.log("Enviando pedido para o cliente...");
   }
 }
