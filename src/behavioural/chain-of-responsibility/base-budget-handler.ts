@@ -1,4 +1,4 @@
-import { CustomerBudget } from './customer-budget';
+import { CustomerBudget } from "./customer-budget";
 
 export abstract class BaseBudgetHandler {
   protected nextHandler: BaseBudgetHandler | null = null;
