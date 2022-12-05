@@ -1,5 +1,5 @@
-import { Mediator } from './mediator';
-import { SellerProduct } from './seller-product';
+import { Mediator } from "./mediator";
+import { SellerProduct } from "./seller-product";
 
 export class Seller {
   private products: SellerProduct[] = [];
