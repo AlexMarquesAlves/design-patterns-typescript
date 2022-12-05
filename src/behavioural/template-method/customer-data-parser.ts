@@ -1,4 +1,4 @@
-import { CustomerData } from './customer-data';
+import { CustomerData } from "./customer-data";
 
 export abstract class CustomerDataParser {
   public customerData: CustomerData[] = [];
@@ -14,7 +14,7 @@ export abstract class CustomerDataParser {
   private fixCpf(): CustomerData[] {
     return this.customerData.map((customer) => ({
       ...customer,
-      cpf: customer.cpf.replace(/\D/g, ''),
+      cpf: customer.cpf.replace(/\D/g, ""),
     }));
   }
 
